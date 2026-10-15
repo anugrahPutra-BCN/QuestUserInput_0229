@@ -27,3 +27,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
+
+@Composable
+fun FormDataDiri(modifier: Modifier){
+    //variabel untuk mengingat nilai masukan dari keyboard
+    var textNama by remember { mutableStateOf(value = "")}
+    var textAlamat by remember { mutableStateOf(value = "") }
+    var textJK by remember { mutableStateOf(value = "") }
+    val gender: List<String> = listOf("Laki-laki", "Perempuan")
